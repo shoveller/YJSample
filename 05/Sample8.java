@@ -4,12 +4,16 @@ class Sample8
 {
     public static void main(String[] args) throws IOException
     {
-        System.out.println("¸î ¹øÂ° ÄÚ½º¸¦ ¼±ÅÃ ÇÏ½Ã°Ú½À´Ï±î?");
-        System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+        System.out.println("ëª‡ ë²ˆì§¸ ì½”ìŠ¤ë¥¼ ì„ íƒ í•˜ì‹œê² ìŠµë‹ˆê¹Œ?");
+        System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
         String str = br.readLine();
         int res = Integer.parseInt(str);
+        
         char ans = (res == 1)? 'A': 'B';
-        System.out.println(ans + " ÄÚ½º¸¦ ¼±ÅÃÇß½À´Ï´Ù.");
+        
+        System.out.println(ans + " ì½”ìŠ¤ë¥¼ ì„ íƒí–ˆìŠµë‹ˆë‹¤.");
     }
 }

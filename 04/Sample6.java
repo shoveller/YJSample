@@ -1,17 +1,22 @@
 import java.io.*;
+
 class Sample6
 {
     public static void main(String[] args) throws IOException
     {
-        System.out.println("Á¤¼ö¸¦ 3°³ ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+        System.out.println("ì •ìˆ˜ë¥¼ 3ê°œ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
         String str1 = br.readLine();
         String str2 = br.readLine();
         String str3 = br.readLine();
+        
         int sum = 0;
         sum += Integer.parseInt(str1);
         sum += Integer.parseInt(str2);
         sum += Integer.parseInt(str3);
-        System.out.println("3°³ Á¤¼öÀÇ ÇÕÀº " + sum + " ÀÔ´Ï´Ù.");
+        
+        System.out.println("3ê°œ ì •ìˆ˜ì˜ í•©ì€ " + sum + " ì…ë‹ˆë‹¤.");
     }
 }

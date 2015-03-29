@@ -4,12 +4,13 @@ class Sample2 {
         int num1 = 2;
         int num2 = 3;
         int sum = num1 + num2;
-        System.out.println("º¯¼ö num1 ÀÇ °ªÀº " + num1 + " ÀÔ´Ï´Ù.");
-        System.out.println("º¯¼ö num2 ÀÇ °ªÀº " + num2 + " ÀÔ´Ï´Ù.");
-        System.out.println("num1+num2 ÀÇ °ªÀº " + sum + " ÀÔ´Ï´Ù.");
+        System.out.println("ë³€ìˆ˜ num1 ì˜ ê°’ì€ " + num1 + " ì…ë‹ˆë‹¤.");
+        System.out.println("ë³€ìˆ˜ num2 ì˜ ê°’ì€ " + num2 + " ì…ë‹ˆë‹¤.");
+        System.out.println("num1+num2 ì˜ ê°’ì€ " + sum + " ì…ë‹ˆë‹¤.");
 
         num1 = num1 + 1;
-        System.out.println("º¯¼ö num1 ÀÇ °ª¿¡ 1À» ´õÇÏ¸é " + num1 + " ÀÔ´Ï´Ù.");
+        
+        System.out.println("ë³€ìˆ˜ num1 ì˜ ê°’ì— 1ì„ ë”í•˜ë©´ " + num1 + " ì…ë‹ˆë‹¤.");
     }
 }
 

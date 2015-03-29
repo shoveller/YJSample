@@ -4,8 +4,9 @@ class Sample11
     {
         int num1 = 5;
         int num2 = 4;
+        
         double div = num1 / num2;
-        //double div = (double) num1 / (double) num2;
-        System.out.println("5/4 ´Â " + div + " ÀÔ´Ï´Ù.");
+        
+        System.out.println("5/4 ëŠ” " + div + " ìž…ë‹ˆë‹¤.");
     }
 }

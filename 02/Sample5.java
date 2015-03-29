@@ -2,7 +2,7 @@ class Sample5
 {
     public static void main (String [] args)
     {
-        System.out.println ( "8 Áø¼ö 101 ÀÇ ¹®ÀÚ ÄÚµå´Â \101ÀÔ´Ï´Ù.");
-        System.out.println("16 Áø¼ö 0061 ÀÇ ¹®ÀÚ ÄÚµå´Â \u0061 ÀÔ´Ï´Ù.");
+        System.out.println("8 ì§„ìˆ˜ 101 ì˜ ë¬¸ì ì½”ë“œëŠ” \101ì…ë‹ˆë‹¤.");
+        System.out.println("16 ì§„ìˆ˜ 0061 ì˜ ë¬¸ì ì½”ë“œëŠ” \u0061 ì…ë‹ˆë‹¤.");
     }
 }

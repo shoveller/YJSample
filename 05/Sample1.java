@@ -3,12 +3,16 @@ class Sample1
 {
     public static void main(String[] args) throws IOException
     {
-        System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+        System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
         String str = br.readLine();
         int res = Integer.parseInt(str);
+        
         if (res == 1)
-            System.out.println("1ÀÌ ÀÔ·ÂµÇ¾ú½À´Ï´Ù.");
-        System.out.println("Ã³¸®¸¦ Á¾·áÇÕ´Ï´Ù.");
+            System.out.println("1ì´ ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤.");
+            
+        System.out.println("ì²˜ë¦¬ë¥¼ ì¢…ë£Œí•©ë‹ˆë‹¤.");
     }
 }

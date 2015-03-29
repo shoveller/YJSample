@@ -3,8 +3,9 @@ class Sample1
     public static void main(String[] args)
     {
         for (int i = 1; i <= 5; i++) {
-            System.out.println ( "¹Ýº¹ÇÏ°í ÀÖ½À´Ï´Ù.");
+            System.out.println ( "ë°˜ë³µí•˜ê³  ìžˆìŠµë‹ˆë‹¤.");
         }
-        System.out.println ("¹Ýº¹ÀÌ ³¡³µ½À´Ï´Ù.");
+        
+        System.out.println ("ë°˜ë³µì´ ëë‚¬ìŠµë‹ˆë‹¤.");
     }
 }

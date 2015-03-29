@@ -4,7 +4,8 @@ class Sample10
     {
         int d = 2;
         double pi = 3.14;
-        System.out.println("Áö¸§ÀÌ " + d + " ¼¾Æ¼¹ÌÅÍÀÎ ¿øÀÇ ");
-        System.out.println("¿ø µÑ·¹´Â " + (d*pi) + " ¼¾Æ¼¹ÌÅÍ ÀÔ´Ï´Ù.");
+        
+        System.out.println("ì§€ë¦„ì´ " + d + " ì„¼í‹°ë¯¸í„°ì¸ ì›ì˜ ");
+        System.out.println("ì› ë‘˜ë ˆëŠ” " + (d*pi) + " ì„¼í‹°ë¯¸í„° ì…ë‹ˆë‹¤.");
     }
 }

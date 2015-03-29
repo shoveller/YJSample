@@ -3,10 +3,12 @@ class Sample5
     public static void main(String[] args)
     {
         int i = 1;
+        
         while (i <= 5) {
-            System.out.println (i + "¹øÂ° ¹Ýº¹ÀÔ´Ï´Ù.");
+            System.out.println (i + "ë²ˆì§¸ ë°˜ë³µìž…ë‹ˆë‹¤.");
             i++;
         }
-        System.out.println ("¹Ýº¹ÀÌ ³¡³µ½À´Ï´Ù.");
+        
+        System.out.println ("ë°˜ë³µì´ ëë‚¬ìŠµë‹ˆë‹¤.");
     }
 }

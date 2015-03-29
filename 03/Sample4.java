@@ -4,9 +4,12 @@ class Sample4
 {
     public static void main(String[] args) throws IOException
     {
-        System.out.println("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+        System.out.println("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
         String str = br.readLine();
-        System.out.println(str + "(ÀÌ)°¡ ÀÔ·ÂµÇ¾ú½À´Ï´Ù.");
+        
+        System.out.println(str + "(ì´)ê°€ ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤.");
     }
 }

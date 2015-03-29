@@ -2,7 +2,7 @@ class Sample7
 {
     public static void main(String[] args)
     {
-        System.out.println("1+2 ´Â " + 1 + 2 + " ÀÔ´Ï´Ù.");
-        System.out.println("3*4 ´Â " + 3 * 4 + " ÀÔ´Ï´Ù.");
+        System.out.println("1+2 ëŠ” " + 1 + 2 + " ìž…ë‹ˆë‹¤.");
+        System.out.println("3*4 ëŠ” " + 3 * 4 + " ìž…ë‹ˆë‹¤.");
     }
 }

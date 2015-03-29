@@ -4,17 +4,20 @@ class Sample7
 {
     public static void main(String[] args) throws IOException
     {
-        System.out.println("´ç½ÅÀº ³²¼ºÀÔ´Ï±î?");
-        System.out.println("Y ¶Ç´Â NÀ» ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+        System.out.println("ë‹¹ì‹ ì€ ë‚¨ì„±ì…ë‹ˆê¹Œ?");
+        System.out.println("Y ë˜ëŠ” Nì„ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
         String str = br.readLine ();
         char res = str.charAt (0);
+        
         if (res == 'Y'|| res == 'y') {
-            System.out.println("´ç½ÅÀº ³²¼ºÀÌ±º¿ä.");
+            System.out.println("ë‹¹ì‹ ì€ ë‚¨ì„±ì´êµ°ìš”.");
         }else if (res == 'N'|| res == 'n') {
-            System.out.println("´ç½ÅÀº ¿©¼ºÀÌ±º¿ä.");
+            System.out.println("ë‹¹ì‹ ì€ ì—¬ì„±ì´êµ°ìš”.");
         }else{
-            System.out.println("Y ¶Ç´Â NÀ» ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+            System.out.println("Y ë˜ëŠ” Nì„ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
         }
     }
 }

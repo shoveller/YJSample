@@ -3,9 +3,12 @@ class Sample8
     public static void main(String[] args)
     {
         int inum = 160;
-        System.out.println("Å°´Â"+ inum + "¼¾Æ¼¹ÌÅÍ ÀÔ´Ï´Ù.");
-        System.out.println("double Çü º¯¼ö¿¡ ´ëÀÔÇÕ´Ï´Ù.");
+        
+        System.out.println("í‚¤ëŠ”"+ inum + "ì„¼í‹°ë¯¸í„° ì…ë‹ˆë‹¤.");
+        
+        System.out.println("double í˜• ë³€ìˆ˜ì— ëŒ€ì…í•©ë‹ˆë‹¤.");
         double dnum = inum;
-        System.out.println ( "Å°´Â"+ dnum + "¼¾Æ¼¹ÌÅÍ ÀÔ´Ï´Ù.");
+        
+        System.out.println("í‚¤ëŠ”"+ dnum + "ì„¼í‹°ë¯¸í„° ì…ë‹ˆë‹¤.");
     }
 }

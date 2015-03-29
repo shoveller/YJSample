@@ -4,12 +4,15 @@ class Sample9
 {
     public static void main(String[] args) throws IOException
     {
-        System.out.println ("¸î ¹øÂ°¿¡¼­ ·çÇÁ¸¦ ºüÁ® ³ª°¡½Ã°Ú½À´Ï±î?£¨1 ? 10£©");
+        System.out.println("ëª‡ ë²ˆì§¸ì—ì„œ ë£¨í”„ë¥¼ ë¹ ì ¸ ë‚˜ê°€ì‹œê² ìŠµë‹ˆê¹Œ?ï¼ˆ1 ? 10ï¼‰");
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
         String str = br.readLine();
         int res = Integer.parseInt(str);
+        
         for(int i=1; i<=10; i++){
-            System.out.println (i + "¹øÂ° Ã³¸®ÀÔ´Ï´Ù.");
+            System.out.println (i + "ë²ˆì§¸ ì²˜ë¦¬ì…ë‹ˆë‹¤.");
             if (i == res)
                 break;
         }

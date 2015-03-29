@@ -1,18 +1,16 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
 class Sample6
 {
     public static void main(String[] args) throws IOException
     {
-        System.out.println("Á¤¼ö¸¦ 2°³ ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+        System.out.println("ì •ìˆ˜ë¥¼ 2ê°œ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str1 = br.readLine();
         String str2 = br.readLine();
         int num1 = Integer.parseInt(str1);
         int num2 = Integer.parseInt(str2);
-        System.out.println("¸ÕÀú" + num1 + "(ÀÌ)°¡ ÀÔ·ÂµÇ¾ú½À´Ï´Ù.");
-        System.out.println ("±× ´ÙÀ½À¸·Î, " + num2 + "(ÀÌ)°¡ ÀÔ·ÂµÇ¾ú½À´Ï´Ù.");
+        System.out.println("ë¨¼ì €" + num1 + "(ì´)ê°€ ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤.");
+        System.out.println ("ê·¸ ë‹¤ìŒìœ¼ë¡œ, " + num2 + "(ì´)ê°€ ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤.");
     }
 }

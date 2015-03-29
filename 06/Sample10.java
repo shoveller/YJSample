@@ -1,30 +1,30 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.*;
 
 class Sample10
 {
     public static void main(String[] args) throws IOException
     {
-        System.out.println ( "Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À.£¨1 ~ 5£©");
+        System.out.println ( "ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹­ì‹œì˜¤.ï¼ˆ1 ~ 5ï¼‰");
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
         String str = br.readLine();
         int res = Integer.parseInt(str);
+        
         switch(res){
             case 1:
             case 2 :
-                System.out.println("Á¶±İ ´õ ³ë·ÂÇÕ½Ã´Ù.");
+                System.out.println("ì¡°ê¸ˆ ë” ë…¸ë ¥í•©ì‹œë‹¤.");
                 break;
             case 3 :
             case 4 :
-                System.out.println("ÀÌ ÆäÀÌ½º·Î ´õ ³ë·ÂÇÕ½Ã´Ù.");
+                System.out.println("ì´ í˜ì´ìŠ¤ë¡œ ë” ë…¸ë ¥í•©ì‹œë‹¤.");
                 break;
             case 5 :
-                System.out.println ("¸Å¿ì ¿ì¼öÇÕ´Ï´Ù.");
+                System.out.println ("ë§¤ìš° ìš°ìˆ˜í•©ë‹ˆë‹¤.");
                 break;
             default:
-                System.out.println ("1 ~ 5 ±îÁöÀÇ ¼ºÀûÀ» ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+                System.out.println ("1 ~ 5 ê¹Œì§€ì˜ ì„±ì ì„ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
                 break;
         }
     }

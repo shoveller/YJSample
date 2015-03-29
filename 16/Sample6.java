@@ -8,12 +8,12 @@ public class Sample6 extends Applet implements ActionListener
     Button bt;
     public void init()
     {
-        bt = new Button("½ÃÀÛ");
+        bt = new Button("ì‹œìž‘");
         add(bt);
         bt.addActionListener(this);
     }
     public void actionPerformed(ActionEvent ae)
     {
-        bt.setLabel("Áß´Ü");
+        bt.setLabel("ì¤‘ì§€");
     }
 }

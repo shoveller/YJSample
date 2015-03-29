@@ -3,9 +3,10 @@ class Sample9
     public static void main(String[] args)
     {
         double dnum = 160.5;
-        System.out.println("Å°´Â"+ dnum + "¼¾Æ¼¹ÌÅÍ ÀÔ´Ï´Ù.");
-        System.out.println("int Çü º¯¼ö¿¡ ´ëÀÔÇÕ´Ï´Ù.");
+        System.out.println("í‚¤ëŠ”"+ dnum + "ì„¼í‹°ë¯¸í„° ì…ë‹ˆë‹¤.");
+        System.out.println("int í˜• ë³€ìˆ˜ì— ëŒ€ì…í•©ë‹ˆë‹¤.");
         int inum = (int)dnum;
-        System.out.println("Å°´Â"+ inum + "¼¾Æ¼¹ÌÅÍ ÀÔ´Ï´Ù.");
+        
+        System.out.println("í‚¤ëŠ”"+ inum + "ì„¼í‹°ë¯¸í„° ì…ë‹ˆë‹¤.");
     }
 }

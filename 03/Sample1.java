@@ -3,7 +3,9 @@ class Sample1
     public static void main(String[] args)
     {
         int num;
+        
         num = 3;
-        System.out.println("º¯¼ö num ÀÇ °ªÀº " + num + " ÀÔ´Ï´Ù.");
+        
+        System.out.println("ë³€ìˆ˜ num ì˜ ê°’ì€ " + num + " ì…ë‹ˆë‹¤.");
     }
 }

@@ -3,10 +3,14 @@ class Sample2
     public static void main(String[] args)
     {
         int num;
+        
         num = 3;
-        System.out.println("º¯¼ö num ÀÇ °ªÀº " + num + " ÀÔ´Ï´Ù.");
+        
+        System.out.println("ë³€ìˆ˜ num ì˜ ê°’ì€ " + num + " ì…ë‹ˆë‹¤.");
+        
         num = 5;
-        System.out.println ("º¯¼ö num ÀÇ °ªÀ» º¯°æÇß½À´Ï´Ù.");
-        System.out.println("º¯¼ö num ÀÇ °ªÀº " + num + " ÀÔ´Ï´Ù.");
+        
+        System.out.println("ë³€ìˆ˜ num ì˜ ê°’ì„ ë³€ê²½í–ˆìŠµë‹ˆë‹¤.");
+        System.out.println("ë³€ìˆ˜ num ì˜ ê°’ì€ " + num + " ì…ë‹ˆë‹¤.");
     }
 }

@@ -1,19 +1,20 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
 class Sample11
 {
     public static void main(String[] args) throws IOException
     {
-        System.out.println("¸î ¹øÂ° Ã³¸®¸¦ °Ç³Ê ¶Ù½Ã°Ú½À´Ï±î?£¨1 ~ 10£©");
+        System.out.println("ëª‡ ë²ˆì§¸ ì²˜ë¦¬ë¥¼ ê±´ë„ˆ ë›°ì‹œê² ìŠµë‹ˆê¹Œ?ï¼ˆ1 ~ 10ï¼‰");
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
         String str = br.readLine();
         int res = Integer.parseInt(str);
+        
         for(int i=1; i<=10; i++){
             if(i == res)
                 continue;
-            System.out.println (i + "¹øÂ° Ã³¸®ÀÔ´Ï´Ù.");
+            System.out.println (i + "ë²ˆì§¸ ì²˜ë¦¬ìž…ë‹ˆë‹¤.");
         }
     }
 }

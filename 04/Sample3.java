@@ -3,12 +3,16 @@ import java.io.*;
 class Sample3 {
     public static void main(String[] args) throws IOException
     {
-        System.out.println( "Á¤¼ö¸¦ 2°³ ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+        System.out.println("ì •ìˆ˜ë¥¼ 2ê°œ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
+        
         BufferedReader br = new BufferedReader (new InputStreamReader (System.in));
+        
         String str1 = br.readLine();
         String str2 = br.readLine();
+        
         int num1 = Integer.parseInt(str1);
         int num2 = Integer.parseInt(str2);
-        System.out.println( "µ¡¼ÀÀÇ °á°ú´Â"+ (num1 + num2) + "ÀÔ´Ï´Ù.");
+        
+        System.out.println("ë§ì…ˆì˜ ê²°ê³¼ëŠ”"+ (num1 + num2) + "ì…ë‹ˆë‹¤.");
     }
 }

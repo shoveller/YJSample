@@ -4,10 +4,13 @@ class Sample3
 {
     public static void main(String[] args) throws IOException
     {
-        System.out.println ( "¸î °³ÀÇ *¸¦ Ãâ·Â ÇÏ½Ã°Ú½À´Ï±î?");
+        System.out.println("ëª‡ ê°œì˜ *ë¥¼ ì¶œë ¥ í•˜ì‹œê² ìŠµë‹ˆê¹Œ?");
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
         String str = br.readLine();
         int num = Integer.parseInt(str);
+        
         for (int i = 1; i <= num; i ++){
             System.out.println ("*");
         }

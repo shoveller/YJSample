@@ -4,19 +4,22 @@ class Sample6
 {
     public static void main(String[] args) throws IOException
     {
-        System.out.println("a È¤Àº b¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+        System.out.println("a í˜¹ì€ bë¥¼ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String str = br.readLine ();
-        char res = str.charAt (0);
+        
+        String str = br.readLine();
+        char res = str.charAt(0);
+        
         switch(res){
             case 'a':
-                System.out.println("a °¡ ÀÔ·ÂµÇ¾ú½À´Ï´Ù.");
+                System.out.println("a ê°€ ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤.");
                 break;
             case 'b':
-                System.out.println("b °¡ ÀÔ·ÂµÇ¾ú½À´Ï´Ù.");
+                System.out.println("b ê°€ ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤.");
                 break;
             default:
-                System.out.println("a È¤Àº b¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+                System.out.println("a í˜¹ì€ bë¥¼ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
                 break;
         }
     }

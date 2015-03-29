@@ -2,7 +2,7 @@ class Sample4
 {
     public static void main (String [] args)
     {
-        System.out.println ( "¿øÈ­ ±âÈ£¸¦ Ç¥½ÃÇÕ´Ï´Ù. : \\ ");
-        System.out.println ("ÀÛÀº µû¿ÈÇ¥¸¦ Ç¥½ÃÇÕ´Ï´Ù. :\'");
+        System.out.println ("ì›í™” ê¸°í˜¸ë¥¼ í‘œì‹œí•©ë‹ˆë‹¤. : \\");
+        System.out.println ("ì‘ì€ ë”°ì˜´í‘œë¥¼ í‘œì‹œí•©ë‹ˆë‹¤. :\'");
     }
 }

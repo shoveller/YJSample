@@ -4,11 +4,12 @@ class Sample4
     {
         int num1 = 10;
         int num2 = 5;
-        System.out.println("num1 °ú num2 ·Î ´Ù¾çÇÑ ¿¬»êÀ» ¼öÇàÇÕ´Ï´Ù.");
-        System.out.println("num1+num2 ´Â " + (num1+num2) + "ÀÔ´Ï´Ù.");
-        System.out.println("num1-num2 ´Â " + (num1-num2) + " ÀÔ´Ï´Ù.");
-        System.out.println("num1*num2 ´Â " + (num1*num2) + " ÀÔ´Ï´Ù.");
-        System.out.println("num1/num2 ´Â " + (num1/num2) + " ÀÔ´Ï´Ù.");
-        System.out.println("num1%num2 ´Â " + (num1%num2) + " ÀÔ´Ï´Ù.");
+        
+        System.out.println("num1 ê³¼ num2 ë¡œ ë‹¤ì–‘í•œ ì—°ì‚°ì„ ìˆ˜í–‰í•©ë‹ˆë‹¤.");
+        System.out.println("num1+num2 ëŠ” " + (num1+num2) + "ì…ë‹ˆë‹¤.");
+        System.out.println("num1-num2 ëŠ” " + (num1-num2) + " ì…ë‹ˆë‹¤.");
+        System.out.println("num1*num2 ëŠ” " + (num1*num2) + " ì…ë‹ˆë‹¤.");
+        System.out.println("num1/num2 ëŠ” " + (num1/num2) + " ì…ë‹ˆë‹¤.");
+        System.out.println("num1%num2 ëŠ” " + (num1%num2) + " ì…ë‹ˆë‹¤.");
     }
 }

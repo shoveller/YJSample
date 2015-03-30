@@ -5,14 +5,17 @@ class Sample4
         try{
             int[] test;
             test = new int[5];
-            System.out.println("test [10]¿¡ °ªÀ» ´ëÀÔÇÕ´Ï´Ù.");
+            
+            System.out.println("test [10]ì— ê°’ì„ ëŒ€ì…í•©ë‹ˆë‹¤.");
+            
             test[10] = 80;
-            System.out.println("test[10]¿¡ 80À» ´ëÀÔÇß½À´Ï´Ù.");
+            System.out.println("test[10]ì— 80ì„ ëŒ€ì…í–ˆìŠµë‹ˆë‹¤.");
         }
         catch(ArrayIndexOutOfBoundsException  e){
-            System.out.println("¹è¿­ ±æÀÌ¸¦ ³Ñ¾î¼¹½À´Ï´Ù.");
-            System.out.println(e + " ÀÌ¶ó´Â ¿¹¿Ü°¡ ¹ß»ıÇß½À´Ï´Ù.");
+            
+            System.out.println("ë°°ì—´ ê¸¸ì´ë¥¼ ë„˜ì–´ì„°ìŠµë‹ˆë‹¤.");
+            System.out.println(e + " ì´ë¼ëŠ” ì˜ˆì™¸ê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤.");
         }
-        System.out.println("¹«»çÈ÷ Á¾·áÇß½À´Ï´Ù.");
+        System.out.println("ë¬´ì‚¬íˆ ì¢…ë£Œí–ˆìŠµë‹ˆë‹¤.");
     }
 }

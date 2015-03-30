@@ -3,9 +3,10 @@ class Sample8
     public static void main(String[] args)
     {
         int [] test = {80,60,22,50,75};
+        
         for(int i=0; i<test.length; i++){
-            System.out.println ((i + 1) + "¹øÂ° »ç¶÷ÀÇ Á¡¼ö´Â " + test [i] + "ÀÔ´Ï´Ù.");
+            System.out.println ((i + 1) + "ë²ˆì§¸ ì‚¬ëžŒì˜ ì ìˆ˜ëŠ” " + test [i] + "ìž…ë‹ˆë‹¤.");
         }
-        System.out.println ( "½ÃÇèÀÇ ÀÀ½ÃÀÚ ¼ö´Â " + test.length + "¸í ÀÔ´Ï´Ù.");
+        System.out.println ( "ì‹œí—˜ì˜ ì‘ì‹œìž ìˆ˜ëŠ” " + test.length + "ëª… ìž…ë‹ˆë‹¤.");
     }
 }

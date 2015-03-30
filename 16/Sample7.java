@@ -22,7 +22,7 @@ public class Sample7 extends Applet implements Runnable
     }
     public void paint(Graphics g)
     {
-        String str = num + " �Դϴ�.";
+        String str = num + " 입니다.";
         g.drawString(str, 10, 10);
     }
 }

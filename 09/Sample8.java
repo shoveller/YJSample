@@ -1,30 +1,32 @@
-// ÀÚµ¿Â÷ Å¬·¡½º
+// ìë™ì°¨ í´ë˜ìŠ¤
 class Car
 {
     public static int sum = 0;
+    
     private int num;
     private double gas;
+    
     public Car ()
     {
         num = 0;
         gas = 0.0;
         sum++;
-        System.out.println("ÀÚµ¿Â÷°¡ ¸¸µé¾îÁ³½À´Ï´Ù.");
+        System.out.println("ìë™ì°¨ê°€ ë§Œë“¤ì–´ì¡ŒìŠµë‹ˆë‹¤.");
     }
     public void setCar(int n, double g)
     {
         num = n;
         gas = g;
-        System.out.println("Â÷·® ¹øÈ£¸¦ " + num + " À¸·Î, ¿¬·á ¾çÀ» " + gas + " ·Î ¹Ù²Ù¾ú½À´Ï´Ù.");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ë¥¼ " + num + " ìœ¼ë¡œ, ì—°ë£Œ ì–‘ì„ " + gas + " ë¡œ ë°”ê¾¸ì—ˆìŠµë‹ˆë‹¤.");
     }
     public static void showSum ()
     {
-        System.out.println ( "ÀÚµ¿Â÷´Â ¸ğµÎ "+ sum + " ´ë ÀÖ½À´Ï´Ù.");
+        System.out.println ( "ìë™ì°¨ëŠ” ëª¨ë‘ "+ sum + " ëŒ€ ìˆìŠµë‹ˆë‹¤.");
     }
     public void show()
     {
-        System.out.println("Â÷·® ¹øÈ£´Â " + num + " ÀÔ´Ï´Ù.");
-        System.out.println("¿¬·á ¾çÀº " + gas + " ÀÔ´Ï´Ù.");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ëŠ” " + num + " ì…ë‹ˆë‹¤.");
+        System.out.println("ì—°ë£Œ ì–‘ì€ " + gas + " ì…ë‹ˆë‹¤.");
     }
 }
 class Sample8
@@ -32,11 +34,14 @@ class Sample8
     public static void main(String[] args)
     {
         Car.showSum();
+        
         Car car1 = new Car();
         car1.setCar(1234, 20.5);
+        
         Car.showSum();
         Car car2 = new Car();
         car2.setCar(4567, 30.5);
+        
         Car.showSum();
     }
 }

@@ -8,6 +8,7 @@ class Sample10
     {
         int[][] test;
         test = new int[2][5];
+        
         test[0][0] = 80;
         test[0][1] = 60;
         test[0][2] = 22;
@@ -18,9 +19,10 @@ class Sample10
         test[1][2] = 68;
         test[1][3] = 72;
         test[1][4] = 58;
+        
         for(int i=0; i<5; i++){
-            System.out.println((i+1) + " ¹øÂ° »ç¶÷ÀÇ ±¹¾î Á¡¼ö´Â "+ test[0][i] + " ÀÔ´Ï´Ù.");
-            System.out.println ((i + 1) + " ¹øÂ° »ç¶÷ÀÇ »ê¼ö Á¡¼ö´Â "+ test[1][i] + " ÀÔ´Ï´Ù.");
+            System.out.println((i+1) + " ë²ˆì§¸ ì‚¬ëŒì˜ êµ­ì–´ ì ìˆ˜ëŠ” "+ test[0][i] + " ì…ë‹ˆë‹¤.");
+            System.out.println ((i + 1) + " ë²ˆì§¸ ì‚¬ëŒì˜ ì‚°ìˆ˜ ì ìˆ˜ëŠ” "+ test[1][i] + " ì…ë‹ˆë‹¤.");
         }
     }
 }

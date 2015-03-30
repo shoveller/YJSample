@@ -1,36 +1,38 @@
-// Å»°Í ÀÎÅÍÆäÀÌ½º
+// íƒˆê²ƒ ì¸í„°í˜ì´ìŠ¤
 interface iVehicle
 {
     void show();
 }
-// ÀÚµ¿Â÷ Å¬·¡½º
+// ìë™ì°¨ í´ë˜ìŠ¤
 class Car implements iVehicle
 {
     private int num;
     private double gas;
+    
     public Car(int n, double g)
     {
         num = n; gas = g;
-        System.out.println("Â÷·® ¹øÈ£°¡ " + num + " ÀÌ¸ç, ¿¬·á ¾çÀÌ " + gas + " ÀÎ ÀÚµ¿Â÷°¡ ¸¸µé¾îÁ³½À´Ï´Ù.");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ê°€ " + num + " ì´ë©°, ì—°ë£Œ ì–‘ì´ " + gas + " ì¸ ìë™ì°¨ê°€ ë§Œë“¤ì–´ì¡ŒìŠµë‹ˆë‹¤.");
     }
     public void show()
     {
-        System.out.println("Â÷·® ¹øÈ£´Â " + num + " ÀÔ´Ï´Ù.");
-        System.out.println("¿¬·á ¾çÀº " + gas + " ÀÔ´Ï´Ù.");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ëŠ” " + num + " ì…ë‹ˆë‹¤.");
+        System.out.println("ì—°ë£Œ ì–‘ì€ " + gas + " ì…ë‹ˆë‹¤.");
     }
 }
-// ºñÇà±â Å¬·¡½º
+// ë¹„í–‰ê¸° í´ë˜ìŠ¤
 class Plane implements iVehicle
 {
     private int flight;
+    
     public Plane(int f)
     {
         flight = f;
-        System.out.println("ºñÇà±â ¹øÈ£°¡ " + flight +   " ÀÎ ºñÇà±â°¡ ¸¸µé¾îÁ³½À´Ï´Ù.");
+        System.out.println("ë¹„í–‰ê¸° ë²ˆí˜¸ê°€ " + flight +   " ì¸ ë¹„í–‰ê¸°ê°€ ë§Œë“¤ì–´ì¡ŒìŠµë‹ˆë‹¤.");
     }
     public void show()
     {
-        System.out.println ("ºñÇà±â ¹øÈ£´Â "+ flight + " ÀÔ´Ï´Ù.");
+        System.out.println ("ë¹„í–‰ê¸° ë²ˆí˜¸ëŠ” "+ flight + " ì…ë‹ˆë‹¤.");
     }
 }
 class Sample3
@@ -39,8 +41,11 @@ class Sample3
     {
         iVehicle[] ivc;
         ivc = new iVehicle[2];
+        
         ivc[0] = new Car(1234, 20.5);
+        
         ivc[1] = new Plane(232);
+        
         for(int i=0; i<ivc.length; i++){
             ivc[i].show();
         }

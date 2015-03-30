@@ -4,13 +4,18 @@ class Sample5
 {
     public static void main(String[] args) throws IOException
     {
-        System.out.println ( "Á¤¼ö¸¦ 2°³ ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+        System.out.println("ì •ìˆ˜ë¥¼ 2ê°œ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
         String str1 = br.readLine();
         String str2 = br.readLine();
+        
         int num1 = Integer.parseInt(str1);
         int num2 = Integer.parseInt(str2);
+        
         int ans = Math.max(num1, num2);
-        System.out.println (num1 + " ¿Í(°ú) "+ num2 + " Áß Å« ÂÊÀº " + ans + " ÀÔ´Ï´Ù. ");
+        
+        System.out.println (num1 + " ì™€(ê³¼) "+ num2 + " ì¤‘ í° ìª½ì€ " + ans + " ì…ë‹ˆë‹¤. ");
     }
 }

@@ -1,14 +1,17 @@
 class Sample2 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Vehicle[] vc;
         vc = new Vehicle[2];
+        
         vc[0] = new Car(1234, 20.5);
         vc[1] = new Plane(232);
+        
         for (int i = 0; i < vc.length; i++) {
             if (vc[i] instanceof Car)
-                System.out.println((i + 1) + " ¹øÂ° °´Ã¼´Â Car Å¬·¡½º ÀÔ´Ï´Ù.");
+                System.out.println((i + 1) + " ë²ˆì§¸ ê°ì²´ëŠ” Car í´ëž˜ìŠ¤ ìž…ë‹ˆë‹¤.");
             else
-                System.out.println((i + 1) + " ¹øÂ° °´Ã¼´Â Car Å¬·¡½º°¡ ¾Æ´Õ´Ï´Ù.");
+                System.out.println((i + 1) + " ë²ˆì§¸ ê°ì²´ëŠ” Car í´ëž˜ìŠ¤ê°€ ì•„ë‹™ë‹ˆë‹¤.");
         }
     }
 }

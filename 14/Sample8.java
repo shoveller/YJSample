@@ -6,15 +6,18 @@ class Sample8
     {
         try{
             BufferedReader br = new BufferedReader(new FileReader("test1.txt"));
+            
             String str1 = br.readLine();
             String str2 = br.readLine();
-            System.out.println("ÆÄÀÏ¿¡ ±â·ÏµÈ 2°³ÀÇ ¹®ÀÚ¿­Àº ");
-            System.out.println( str1 + " ÀÔ´Ï´Ù.");
-            System.out.println( str2 + " ÀÔ´Ï´Ù.");
+            
+            System.out.println("íŒŒì¼ì— ê¸°ë¡ëœ 2ê°œì˜ ë¬¸ìì—´ì€ ");
+            System.out.println( str1 + " ì…ë‹ˆë‹¤.");
+            System.out.println( str2 + " ì…ë‹ˆë‹¤.");
+            
             br.close();
         }
         catch(IOException e){
-            System.out.println("ÀÔÃâ·Â ¿¡·¯°¡ ¹ß»ıÇß½À´Ï´Ù.");
+            System.out.println("ì…ì¶œë ¥ ì—ëŸ¬ê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤.");
         }
     }
 }

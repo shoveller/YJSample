@@ -8,16 +8,16 @@ class Car
         if(g > 0 && g < 1000){
             num = n;
             gas = g;
-            System.out.println("Â÷·® ¹øÈ£¸¦ " + num + " À¸·Î, ¿¬·á ¾çÀ» " + gas + " ·Î ¹Ù²Ù¾ú½À´Ï´Ù.");
+            System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ë¥¼ " + num + " ìœ¼ë¡œ, ì—°ë£Œ ì–‘ì„ " + gas + " ë¡œ ë°”ê¾¸ì—ˆìŠµë‹ˆë‹¤.");
         }else{
-            System.out.println (g + " ´Â ¿Ã¹Ù¸¥ ¿¬·á ¾çÀÌ ¾Æ´Õ´Ï´Ù.");
-            System.out.println("¿¬·á ¾çÀ» ¹Ù²Ü ¼ö ¾ø½À´Ï´Ù.");
+            System.out.println (g + " ëŠ” ì˜¬ë°”ë¥¸ ì—°ë£Œ ì–‘ì´ ì•„ë‹™ë‹ˆë‹¤.");
+            System.out.println("ì—°ë£Œ ì–‘ì„ ë°”ê¿€ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
         }
     }
     public void show()
     {
-        System.out.println("Â÷·® ¹øÈ£´Â " + num + " ÀÔ´Ï´Ù.");
-        System.out.println("¿¬·á ¾çÀº " + gas + " ÀÔ´Ï´Ù.");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ëŠ” " + num + " ìž…ë‹ˆë‹¤.");
+        System.out.println("ì—°ë£Œ ì–‘ì€ " + gas + " ìž…ë‹ˆë‹¤.");
     }
 }
 
@@ -26,12 +26,15 @@ class Sample2
     public static void main(String[] args)
     {
         Car car1 = new Car();
-        // ÀÌ·¯ÇÑ Á¢±ÙÀº ºÒ°¡´ÉÇÕ´Ï´Ù.
+        // ì´ëŸ¬í•œ ì ‘ê·¼ì€ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤.
         //car1.num = 1234;
         //car1.gas = -10.0;
-        //car1.setNumGas(1234,  20.5);
+        
+        car1.setNumGas(1234,  20.5);
         car1.show();
-        System.out.println("Àß¸øµÈ ¿¬·á ¾ç (-10.0)À» ÀúÀåÇÏ°Ú½À´Ï´Ù ....");
+        
+        System.out.println("ìž˜ëª»ëœ ì—°ë£Œ ì–‘ (-10.0)ì„ ì €ìž¥í•˜ê² ìŠµë‹ˆë‹¤ ....");
+        
         car1.setNumGas(1234,  -10.0);
         car1.show();
     }

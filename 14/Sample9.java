@@ -6,25 +6,31 @@ class Sample9
     {
         try{
             BufferedReader br = new BufferedReader(new FileReader("test2.txt"));
+            
             int[] test = new int[8];
             String str;
+            
             for(int i=0; i<test.length; i++){
                 str = br.readLine();
                 test[i] = Integer.parseInt(str);
             }
-            int max = test[0];int min = test[0];
+            
+            int max = test[0];
+            int min = test[0];
             for(int i=0; i<test.length; i++){
                 if(max < test[i])
                     max = test[i];
                 if(min > test[i]) min = test[i];
                     System.out.println(test[i]);
             }
-            System.out.println("ÃÖ°í Á¡¼ö´Â " + max + " ÀÔ´Ï´Ù.");
-            System.out.println("ÃÖÀú Á¡¼ö´Â " + min + " ÀÔ´Ï´Ù.");
+            
+            System.out.println("ìµœê³  ì ìˆ˜ëŠ” " + max + " ì…ë‹ˆë‹¤.");
+            System.out.println("ìµœì € ì ìˆ˜ëŠ” " + min + " ì…ë‹ˆë‹¤.");
+            
             br.close();
         }
         catch(IOException e){
-            System.out.println("ÀÔÃâ·Â ¿¡·¯°¡ ¹ß»ıÇß½À´Ï´Ù.");
+            System.out.println("ì…ì¶œë ¥ ì—ëŸ¬ê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤.");
         }
     }
 }

@@ -5,8 +5,9 @@ class Sample11
         int[][] test = {
             {80,60,22,50},{90,55,68,72},{33,75,63}
         };
+        
         for(int i=0; i<test.length; i++){
-            System.out.println((i+1) + " ¹øÂ° ¹è¿­ ¿ä¼ÒÀÇ ±æÀÌ´Â "+ test[i].length + " ÀÔ´Ï´Ù.");
+            System.out.println((i+1) + " ë²ˆì§¸ ë°°ì—´ ìš”ì†Œì˜ ê¸¸ì´ëŠ” "+ test[i].length + " ìž…ë‹ˆë‹¤.");
         }
     }
 }

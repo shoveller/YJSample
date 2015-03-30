@@ -4,12 +4,16 @@ class Sample2
 {
     public static void main(String[] args) throws IOException
     {
-        System.out.println("¿µ¹®ÀÚ¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+        System.out.println("ì˜ë¬¸ìë¥¼ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
         String str = br.readLine();
+        
         String stru = str.toUpperCase();
         String strl = str.toLowerCase();
-        System.out.println ("´ë¹®ÀÚ·Î º¯È¯ÇÏ¸é "+ stru + " ÀÔ´Ï´Ù.");
-        System.out.println("¼Ò¹®ÀÚ·Î º¯È¯ÇÏ¸é "+ strl + " ÀÔ´Ï´Ù.");
+        
+        System.out.println ("ëŒ€ë¬¸ìë¡œ ë³€í™˜í•˜ë©´ "+ stru + " ì…ë‹ˆë‹¤.");
+        System.out.println("ì†Œë¬¸ìë¡œ ë³€í™˜í•˜ë©´ "+ strl + " ì…ë‹ˆë‹¤.");
     }
 }

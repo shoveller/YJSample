@@ -1,46 +1,48 @@
-// Å»°Í Å¬·¡½º
+// íƒˆê²ƒ í´ë˜ìŠ¤
 abstract class Vehicle
 {
     protected int speed;
     public void setSpeed(int s)
     {
         speed = s;
-        System.out.println("¼Óµµ¸¦ " + speed + " À¸·Î º¯°æÇß½À´Ï´Ù.");
+        System.out.println("ì†ë„ë¥¼ " + speed + " ìœ¼ë¡œ ë³€ê²½í–ˆìŠµë‹ˆë‹¤.");
     }
     abstract void show();
 }
 
-// ÀÚµ¿Â÷ Å¬·¡½º
+// ìë™ì°¨ í´ë˜ìŠ¤
 class Car extends Vehicle
 {
     private int num;
     private double gas;
+    
     public Car(int n, double g)
     {
         num = n;
         gas = g;
-        System.out.println("Â÷·® ¹øÈ£ " + num + " , ¿¬·á ¾ç " + gas + " ÀÎ ÀÚµ¿Â÷°¡ ¸¸µé¾îÁ³½À´Ï´Ù.");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ " + num + " , ì—°ë£Œ ì–‘ " + gas + " ì¸ ìë™ì°¨ê°€ ë§Œë“¤ì–´ì¡ŒìŠµë‹ˆë‹¤.");
     }
     public void show()
     {
-        System.out.println("Â÷·® ¹øÈ£´Â " + num + " ÀÔ´Ï´Ù.");
-        System.out.println("¿¬·á ¾çÀº " + gas + " ÀÔ´Ï´Ù.");
-        System.out.println("¼Óµµ´Â " +  speed + " ÀÔ´Ï´Ù.");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ëŠ” " + num + " ì…ë‹ˆë‹¤.");
+        System.out.println("ì—°ë£Œ ì–‘ì€ " + gas + " ì…ë‹ˆë‹¤.");
+        System.out.println("ì†ë„ëŠ” " +  speed + " ì…ë‹ˆë‹¤.");
     }
 }
-// ºñÇà±â Å¬·¡½º
+// ë¹„í–‰ê¸° í´ë˜ìŠ¤
 class Plane extends Vehicle
 {
     private int flight;
+    
     public Plane(int f)
     {
         flight = f;
-        System.out.println("ºñÇà±â ¹øÈ£°¡ " + flight +   " ÀÎ ºñÇà±â°¡ ¸¸µé¾îÁ³½À´Ï´Ù.");
+        System.out.println("ë¹„í–‰ê¸° ë²ˆí˜¸ê°€ " + flight +   " ì¸ ë¹„í–‰ê¸°ê°€ ë§Œë“¤ì–´ì¡ŒìŠµë‹ˆë‹¤.");
     }
     public void show()
     {
-        System.out.println ("ºñÇà±â ¹øÈ£´Â "+ flight + " ÀÔ´Ï´Ù.");
-        System.out.println("¼Óµµ´Â " +  speed + " ÀÔ´Ï´Ù.");
+        System.out.println ("ë¹„í–‰ê¸° ë²ˆí˜¸ëŠ” "+ flight + " ì…ë‹ˆë‹¤.");
+        System.out.println("ì†ë„ëŠ” " +  speed + " ì…ë‹ˆë‹¤.");
     }
 }
 
@@ -50,10 +52,13 @@ class Sample1
     {
         Vehicle[] vc;
         vc = new Vehicle[2];
+        
         vc[0] = new Car(1234, 20.5);
         vc[0].setSpeed(60);
+        
         vc[1] = new Plane(232);
         vc[1].setSpeed(500);
+        
         for(int i=0; i<vc.length; i++){
             vc[i].show();
         }

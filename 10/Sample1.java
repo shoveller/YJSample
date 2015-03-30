@@ -3,11 +3,14 @@ class Sample1
     public static void main(String[] args)
     {
         String str = "Hello";
+        
         char ch1 = str.charAt(0);
         char ch2 = str.charAt(1);
+        
         int len = str.length();
-        System.out.println(str + " ÀÇ Ã¹ ¹øÂ° ¹®ÀÚ´Â " + ch1 + "ÀÔ´Ï´Ù.");
-        System.out.println(str + " ÀÇ µÎ ¹øÂ° ¹®ÀÚ´Â " + ch2 + "ÀÔ´Ï´Ù.");
-        System.out.println(str + "±æÀÌ´Â "+ len + " ÀÔ´Ï´Ù.");
+        
+        System.out.println(str + " ì˜ ì²« ë²ˆì§¸ ë¬¸ìëŠ” " + ch1 + "ì…ë‹ˆë‹¤.");
+        System.out.println(str + " ì˜ ë‘ ë²ˆì§¸ ë¬¸ìëŠ” " + ch2 + "ì…ë‹ˆë‹¤.");
+        System.out.println(str + "ê¸¸ì´ëŠ” "+ len + " ì…ë‹ˆë‹¤.");
     }
 }

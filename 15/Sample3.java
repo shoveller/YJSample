@@ -1,6 +1,7 @@
 class Car extends Thread
 {
     private String name;
+    
     public Car(String nm)
     {
         name = nm;
@@ -10,7 +11,7 @@ class Car extends Thread
         for(int i=0; i<5; i++){
             try{
                 sleep(1000);
-                System.out.println(name + " °¡ µ¿ÀÛÇÏ°í ÀÖ½À´Ï´Ù.");
+                System.out.println(name + " ê°€ ë™ìž‘í•˜ê³  ìžˆìŠµë‹ˆë‹¤.");
             }catch(InterruptedException  e){}
         }
     }
@@ -19,10 +20,11 @@ class Sample3
 {
     public static void main(String[] args)
     {
-        Car car1 = new Car("1 È£Â÷");
+        Car car1 = new Car("1 í˜¸ì°¨");
         car1.start();
+        
         for(int i=0; i<5; i++){
-            System.out.println("main() ¸Þ¼Òµå ½ÇÇàÁßÀÔ´Ï´Ù.");
+            System.out.println("main() ë©”ì†Œë“œ ì‹¤í–‰ì¤‘ìž…ë‹ˆë‹¤.");
         }
     }
 }

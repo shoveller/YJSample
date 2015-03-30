@@ -5,11 +5,13 @@ class Sample10
     public static void main(String[] args)
     {
         if (args.length != 1){
-            System.out.println("¿Ã¹Ù¸¥ ÆÄÀÏ ÀÌ¸§À» ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+            System.out.println("ì˜¬ë°”ë¥¸ íŒŒì¼ ì´ë¦„ì„ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
             System.exit (1);
         }
         try{
+            
             BufferedReader br = new BufferedReader(new FileReader(args[0]));
+            
             String str;
             while((str = br.readLine()) != null){
                 System.out.println(str);
@@ -17,7 +19,7 @@ class Sample10
             br.close();
         }
         catch(IOException e){
-            System.out.println("ÀÔÃâ·Â ¿¡·¯°¡ ¹ß»ıÇß½À´Ï´Ù.");
+            System.out.println("ì…ì¶œë ¥ ì—ëŸ¬ê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤.");
         }
     }
 }

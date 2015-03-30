@@ -4,9 +4,10 @@ class Sample1
     {
         int[] test;
         test = new int[5];
-        System.out.println("test [10]¿¡ °ªÀ» ´ëÀÔÇÕ´Ï´Ù.");
+        System.out.println("test [10]ì— ê°’ì„ ëŒ€ì…í•©ë‹ˆë‹¤.");
+        
         test[10] = 80;
-        System.out.println("test[10]¿¡ 80À» ´ëÀÔÇß½À´Ï´Ù.");
-        System.out.println( "¹«»çÈ÷ Á¾·áÇß½À´Ï´Ù.");
+        System.out.println("test[10]ì— 80ì„ ëŒ€ì…í–ˆìŠµë‹ˆë‹¤.");
+        System.out.println( "ë¬´ì‚¬íˆ ì¢…ë£Œí–ˆìŠµë‹ˆë‹¤.");
     }
 }

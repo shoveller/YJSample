@@ -1,51 +1,53 @@
-// ÀÚµ¿Â÷ Å¬·¡½º
+// ìë™ì°¨ í´ë˜ìŠ¤
 class Car
 {
     private int num;
     private double gas;
+    
     public Car ()
     {
         num = 0;
         gas = 0.0;
-        System.out.println("ÀÚµ¿Â÷°¡ ¸¸µé¾îÁ³½À´Ï´Ù.");
+        System.out.println("ìë™ì°¨ê°€ ë§Œë“¤ì–´ì¡ŒìŠµë‹ˆë‹¤.");
     }
     public Car(int n, double g)
     {
         num = n;
         gas = g;
-        System.out.println("Â÷·® ¹øÈ£°¡ " + num + " ÀÌ¸ç, ¿¬·á ¾çÀÌ " + gas + " ÀÎ ÀÚµ¿Â÷°¡ ¸¸µé¾îÁ³½À´Ï´Ù.");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ê°€ " + num + " ì´ë©°, ì—°ë£Œ ì–‘ì´ " + gas + " ì¸ ìë™ì°¨ê°€ ë§Œë“¤ì–´ì¡ŒìŠµë‹ˆë‹¤.");
     }
     public void setCar(int n, double g)
     {
         num = n;
         gas = g;
-        System.out.println("Â÷·® ¹øÈ£¸¦ " + num + " À¸·Î, ¿¬·á ¾çÀ» " + gas + " ·Î ¹Ù²Ù¾ú½À´Ï´Ù.");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ë¥¼ " + num + " ìœ¼ë¡œ, ì—°ë£Œ ì–‘ì„ " + gas + " ë¡œ ë°”ê¾¸ì—ˆìŠµë‹ˆë‹¤.");
     }
     public void show()
     {
-        System.out.println("Â÷·® ¹øÈ£´Â " + num + " ÀÔ´Ï´Ù.");
-        System.out.println("¿¬·á ¾çÀº " + gas + " ÀÔ´Ï´Ù.");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ëŠ” " + num + " ì…ë‹ˆë‹¤.");
+        System.out.println("ì—°ë£Œ ì–‘ì€ " + gas + " ì…ë‹ˆë‹¤.");
     }
 }
-// ·¹ÀÌ½Ì Ä« Å¬·¡½º
+// ë ˆì´ì‹± ì¹´ í´ë˜ìŠ¤
 class RacingCar extends Car
 {
     private int course;
+    
     public RacingCar()
     {
         course = 0;
-        System.out.println("·¹ÀÌ½Ì Ä«°¡ ¸¸µé¾îÁ³½À´Ï´Ù.");
+        System.out.println("ë ˆì´ì‹± ì¹´ê°€ ë§Œë“¤ì–´ì¡ŒìŠµë‹ˆë‹¤.");
     }
     public RacingCar(int n, double g, int c)
     {
         super(n, g);
         course = c;
-        System.out.println (" ÄÚ½º ¹øÈ£°¡ "+ course + " ÀÎ ·¹ÀÌ½Ì Ä«°¡ ¸¸µé¾î Á³½À´Ï´Ù.");
+        System.out.println (" ì½”ìŠ¤ ë²ˆí˜¸ê°€ "+ course + " ì¸ ë ˆì´ì‹± ì¹´ê°€ ë§Œë“¤ì–´ ì¡ŒìŠµë‹ˆë‹¤.");
     }
     public void setCourse(int c)
     {
         course = c;
-        System.out.println("ÄÚ½º ¹øÈ£¸¦ "+ course + " ·Î Çß½À´Ï´Ù.");
+        System.out.println("ì½”ìŠ¤ ë²ˆí˜¸ë¥¼ "+ course + " ë¡œ í–ˆìŠµë‹ˆë‹¤.");
     }
 }
 

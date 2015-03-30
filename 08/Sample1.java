@@ -1,4 +1,4 @@
-// ÀÚµ¿Â÷ Å¬·¡½º
+// ìë™ì°¨ í´ë˜ìŠ¤
 class Car
 {
     int num;
@@ -11,9 +11,11 @@ class Sample1
     {
         Car car1;
         car1 = new Car ();
+        
         car1.num = 1234;
         car1.gas = 20.5;
-        System.out.println("Â÷·® ¹øÈ£´Â " + car1.num + " ÀÔ´Ï´Ù.");
-        System.out.println("¿¬·á ¾çÀº " + car1.gas + " ÀÔ´Ï´Ù.");
+        
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ëŠ” " + car1.num + " ì…ë‹ˆë‹¤.");
+        System.out.println("ì—°ë£Œ ì–‘ì€ " + car1.gas + " ì…ë‹ˆë‹¤.");
     }
 }

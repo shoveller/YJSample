@@ -5,16 +5,20 @@ class Sample3
         try{
             int[] test;
             test = new int[5];
-            System.out.println("test [10]¿¡ °ªÀ» ´ëÀÔÇÕ´Ï´Ù.");
+            
+            System.out.println("test [10]ì— ê°’ì„ ëŒ€ì…í•©ë‹ˆë‹¤.");
+            
             test[10] = 80;
-            System.out.println("test[10]¿¡ 80À» ´ëÀÔÇß½À´Ï´Ù.");
+            System.out.println("test[10]ì— 80ì„ ëŒ€ì…í–ˆìŠµë‹ˆë‹¤.");
+            
         }
         catch(ArrayIndexOutOfBoundsException  e){
-            System.out.println ("¹è¿­ ±æÀÌ¸¦ ³Ñ¾î¼¹½À´Ï´Ù.");
+            System.out.println ("ë°°ì—´ ê¸¸ì´ë¥¼ ë„˜ì–´ì„°ìŠµë‹ˆë‹¤.");
         }
         finally {
-            System.out.println("¸¶Áö¸·¿¡ ¹İµå½Ã ÀÌ ÄÚµå°¡ ½ÇÇàµË´Ï´Ù.");
+            
+            System.out.println("ë§ˆì§€ë§‰ì— ë°˜ë“œì‹œ ì´ ì½”ë“œê°€ ì‹¤í–‰ë©ë‹ˆë‹¤.");
         }
-        System.out.println("¹«»çÈ÷ Á¾·áÇß½À´Ï´Ù.");
+        System.out.println("ë¬´ì‚¬íˆ ì¢…ë£Œí–ˆìŠµë‹ˆë‹¤.");
     }
 }

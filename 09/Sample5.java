@@ -1,24 +1,25 @@
-//ÀÚµ¿Â÷ Å¬·¡½º
+//ìë™ì°¨ í´ë˜ìŠ¤
 class Car
 {
     private int num;
     private double gas;
+    
     public Car ()
     {
         num = 0;
         gas = 0.0;
-        System.out.println("ÀÚµ¿Â÷°¡ ¸¸µé¾îÁ³½À´Ï´Ù.");
+        System.out.println("ìë™ì°¨ê°€ ë§Œë“¤ì–´ì¡ŒìŠµë‹ˆë‹¤.");
     }
     public Car(int n, double g)
     {
         num = n;
         gas = g;
-        System.out.println("Â÷·® ¹øÈ£°¡ " + num + " ÀÌ¸ç, ¿¬·á ¾çÀÌ " + gas + " ÀÎ ÀÚµ¿Â÷°¡ ¸¸µé¾îÁ³½À´Ï´Ù.");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ê°€ " + num + " ì´ë©°, ì—°ë£Œ ì–‘ì´ " + gas + " ì¸ ìë™ì°¨ê°€ ë§Œë“¤ì–´ì¡ŒìŠµë‹ˆë‹¤.");
     }
     public void show()
     {
-        System.out.println("Â÷·® ¹øÈ£´Â " + num + " ÀÔ´Ï´Ù.");
-        System.out.println("¿¬·á ¾çÀº " + gas + " ÀÔ´Ï´Ù.");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ëŠ” " + num + " ì…ë‹ˆë‹¤.");
+        System.out.println("ì—°ë£Œ ì–‘ì€ " + gas + " ì…ë‹ˆë‹¤.");
     }
 }
 
@@ -28,7 +29,8 @@ class Sample5
     {
         Car car1 = new Car();
         car1.show();
-        //Car car2 = new Car(1234, 20.5);
-        //car2.show();
+        
+        Car car2 = new Car(1234, 20.5);
+        car2.show();
     }
 }

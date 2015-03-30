@@ -2,11 +2,12 @@ class Car
 {
     protected int num;
     protected double gas;
-    public Car ()
+    
+    public Car()
     {
         num = 0;
         gas = 0.0;
-        System.out.println("ÀÚµ¿Â÷°¡ ¸¸µé¾îÁ³½À´Ï´Ù.");
+        System.out.println("ìë™ì°¨ê°€ ë§Œë“¤ì–´ì¡ŒìŠµë‹ˆë‹¤.");
     }
 }
 class Sample8
@@ -15,11 +16,14 @@ class Sample8
     {
         Car car1 = new Car();
         Car car2 = new Car();
+        
         Car car3;
         car3 = car1;
+        
         boolean bl1 = car1.equals(car2);
         boolean bl2 = car1.equals(car3);
-        System.out.println ("car1°ú car2°¡ °°ÀºÁö Á¶»çÇÑ °á°ú, " + bl1 + " ÀÌ¾ú½À´Ï´Ù.");
-        System.out.println ("car1°ú car3ÀÌ °°ÀºÁö Á¶»çÇÑ °á°ú, " + bl2 + " ÀÌ¾ú½À´Ï´Ù.");
+        
+        System.out.println ("car1ê³¼ car2ê°€ ê°™ì€ì§€ ì¡°ì‚¬í•œ ê²°ê³¼, " + bl1 + " ì´ì—ˆìŠµë‹ˆë‹¤.");
+        System.out.println ("car1ê³¼ car3ì´ ê°™ì€ì§€ ì¡°ì‚¬í•œ ê²°ê³¼, " + bl2 + " ì´ì—ˆìŠµë‹ˆë‹¤.");
     }
 }

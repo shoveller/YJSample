@@ -1,32 +1,33 @@
-// Å»°Í ÀÎÅÍÆäÀÌ½º
+// íƒˆê²ƒ ì¸í„°í˜ì´ìŠ¤
 interface iVehicle
 {
     void vShow ();
 }
-// ¸ñÀç ÀÎÅÍÆäÀÌ½º
+// ëª©ì¬ ì¸í„°í˜ì´ìŠ¤
 interface iMaterial
 {
     void mShow();
 }
-// ÀÚµ¿Â÷ Å¬·¡½º
+// ìë™ì°¨ í´ë˜ìŠ¤
 class Car implements iVehicle, iMaterial
 {
     private int num;
     private double gas;
+    
     public Car(int n, double g)
     {
         num = n;
         gas = g;
-        System.out.println("Â÷·® ¹øÈ£°¡ " + num + " ÀÌ¸ç, ¿¬·á ¾çÀÌ " + gas + " ÀÎ ÀÚµ¿Â÷°¡ ¸¸µé¾îÁ³½À´Ï´Ù.");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ê°€ " + num + " ì´ë©°, ì—°ë£Œ ì–‘ì´ " + gas + " ì¸ ìë™ì°¨ê°€ ë§Œë“¤ì–´ì¡ŒìŠµë‹ˆë‹¤.");
     }
     public void vShow()
     {
-        System.out.println("Â÷·® ¹øÈ£´Â " + num + " ÀÔ´Ï´Ù.");
-        System.out.println("¿¬·á ¾çÀº " + gas + " ÀÔ´Ï´Ù.");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ëŠ” " + num + " ì…ë‹ˆë‹¤.");
+        System.out.println("ì—°ë£Œ ì–‘ì€ " + gas + " ì…ë‹ˆë‹¤.");
     }
     public void mShow()
     {
-        System.out.println("ÀÚµ¿Â÷ÀÇ ÀçÁúÀº Ã¶ÀÔ´Ï´Ù.");
+        System.out.println("ìë™ì°¨ì˜ ì¬ì§ˆì€ ì² ì…ë‹ˆë‹¤.");
     }
 }
 class Sample4

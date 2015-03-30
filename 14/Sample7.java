@@ -6,13 +6,15 @@ class Sample7
     {
         try{
             PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("test1.txt")));
+            
             pw.println("Hello!");
             pw.println("GoodBye!");
-            System.out.println("ÆÄÀÏ¿¡ ±â·ÏµÇ¾ú½À´Ï´Ù.");
+            System.out.println("íŒŒì¼ì— ê¸°ë¡ë˜ì—ˆìŠµë‹ˆë‹¤.");
+            
             pw.close();
         }
         catch(IOException e){
-            System.out.println("ÀÔÃâ·Â ¿¡·¯°¡ ¹ß»ıÇß½À´Ï´Ù.");
+            System.out.println("ì…ì¶œë ¥ ì—ëŸ¬ê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤.");
         }
     }
 }

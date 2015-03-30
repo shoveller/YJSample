@@ -4,16 +4,22 @@ class Sample3
 {
     public static void main(String[] args) throws IOException
     {
-        System.out.println("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+        System.out.println("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
+        
         BufferedReader br = new BufferedReader(new InputStreamReader (System.in));
+        
         String str1 = br.readLine ();
-        System.out.println ("¾È³çÇÏ½Ê´Ï±î. °Ë»ö¾î¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+        
+        System.out.println ("ì•ˆë…•í•˜ì‹­ë‹ˆê¹Œ. ê²€ìƒ‰ì–´ë¥¼ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
+        
         String str2 = br.readLine();
         char ch = str2.charAt(0);
+        
         int num = str1.indexOf(ch);
+        
         if(num != -1)
-            System.out.println(str1 + " ÀÇ " + (num+1) + "¹øÂ°¿¡¼­ ' "+ ch +" 'À»(¸¦) ¹ß°ßÇß½À´Ï´Ù. ");
+            System.out.println(str1 + " ì˜ " + (num+1) + "ë²ˆì§¸ì—ì„œ ' "+ ch +" 'ì„(ë¥¼) ë°œê²¬í–ˆìŠµë‹ˆë‹¤. ");
         else
-            System.out.println (str1 + "¿¡¼­ '" + ch + "' À»(¸¦) Ã£À» ¼ö ¾ø¾ú½À´Ï´Ù.");
+            System.out.println (str1 + "ì—ì„œ '" + ch + "' ì„(ë¥¼) ì°¾ì„ ìˆ˜ ì—†ì—ˆìŠµë‹ˆë‹¤.");
     }
 }

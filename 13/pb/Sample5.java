@@ -4,7 +4,7 @@ class Sample5
 {
     public static void main(String[] args)
     {
-        Lesson13.Sample5.pc.Car car1 = new Lesson13.Sample5.pc.Car();
+        pc.Car car1 = new pc.Car();
         car1.show();
     }
 }

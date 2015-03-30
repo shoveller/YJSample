@@ -1,4 +1,4 @@
-// ÀÚµ¿Â÷ Å¬·¡½º
+// ìë™ì°¨ í´ë˜ìŠ¤
 class Car
 {
     int num;
@@ -9,24 +9,24 @@ class Car
 
     int getNum()
     {
-        System.out.println("Â÷·® ¹øÈ£¸¦ Á¶»çÇß½À´Ï´Ù.");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ë¥¼ ì¡°ì‚¬í–ˆìŠµë‹ˆë‹¤.");
         return num;
     }
     double getGas()
     {
-        System.out.println("¿¬·á ¾çÀ» Á¶»çÇß½À´Ï´Ù.");
+        System.out.println("ì—°ë£Œ ì–‘ì„ ì¡°ì‚¬í–ˆìŠµë‹ˆë‹¤.");
         return gas;
     }
     void setNumGas(int n, double g)
     {
         num = n;
         gas = g;
-        System.out.println("Â÷·® ¹øÈ£¸¦ " + num + " À¸·Î, ¿¬·á ¾çÀ» " + gas + " ·Î ¹Ù²Ù¾ú½À´Ï´Ù.");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ë¥¼ " + num + " ìœ¼ë¡œ, ì—°ë£Œ ì–‘ì„ " + gas + " ë¡œ ë°”ê¾¸ì—ˆìŠµë‹ˆë‹¤.");
     }
     void show()
     {
-        System.out.println("Â÷·® ¹øÈ£´Â " + num + " ÀÔ´Ï´Ù.");
-        System.out.println("¿¬·á ¾çÀº " + gas + " ÀÔ´Ï´Ù.");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ëŠ” " + num + " ì…ë‹ˆë‹¤.");
+        System.out.println("ì—°ë£Œ ì–‘ì€ " + gas + " ì…ë‹ˆë‹¤.");
     }
 }
 class Sample6
@@ -34,10 +34,13 @@ class Sample6
     public static void main(String[] args)
     {
         Car car1 = new Car();
+        
         car1.setNumGas(1234,  20.5);
+        
         int number = car1.getNum();
         double gasoline = car1.getGas();
-        System.out.println("»ùÇÃÀÚµ¿Â÷¸¦ Á¶»çÇÑ °á°ú ");
-        System.out.println("Â÷·® ¹øÈ£´Â "+ number + ", ¿¬·á ¾çÀº " + gasoline + " ÀÌ¾ú½À´Ï´Ù.");
+        
+        System.out.println("ìƒ˜í”Œìë™ì°¨ë¥¼ ì¡°ì‚¬í•œ ê²°ê³¼ ");
+        System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ëŠ” "+ number + ", ì—°ë£Œ ì–‘ì€ " + gasoline + " ì´ì—ˆìŠµë‹ˆë‹¤.");
     }
 }

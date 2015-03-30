@@ -4,14 +4,16 @@ class Sample6
 {
     public static void main(String[] args)
     {
-        System.out.println("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+        System.out.println("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
+        
         try{
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            
             String str = br.readLine();
-            System.out.println (str + "(ÀÌ)°¡ ÀÔ·ÂµÇ¾ú½À´Ï´Ù.");
+            System.out.println (str + "(ì´)ê°€ ì…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤.");
         }
         catch(IOException e){
-            System.out.println ( "ÀÔÃâ·Â ¿¡·¯°¡ ¹ß»ıÇß½À´Ï´Ù.");
+            System.out.println ( "ì…ì¶œë ¥ ì—ëŸ¬ê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤.");
         }
     }
 }

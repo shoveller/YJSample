@@ -1,21 +1,22 @@
-//È¸»ç Å¬·¡½º
+//íšŒì‚¬ í´ë˜ìŠ¤
 class Company
 {
     private int sum = 0;
     public synchronized void add(int a)
     {
         int tmp = sum;
-        System.out.println ("ÇöÀç ±İ¾×ÀÇ ÇÕÀº "+ tmp + " ¿ø ÀÔ´Ï´Ù.");
-        System.out.println (a + " ¿ø ¹ú¾ú½À´Ï´Ù.");
+        System.out.println ("í˜„ì¬ ê¸ˆì•¡ì˜ í•©ì€ "+ tmp + " ì› ì…ë‹ˆë‹¤.");
+        System.out.println (a + " ì› ë²Œì—ˆìŠµë‹ˆë‹¤.");
         tmp = tmp + a;
-        System.out.println ("±İ¾×ÀÇ ÇÕÀ» "+ tmp + " ¿øÀ¸·Î ¸¸µì´Ï´Ù.");
+        System.out.println ("ê¸ˆì•¡ì˜ í•©ì„ "+ tmp + " ì›ìœ¼ë¡œ ë§Œë“­ë‹ˆë‹¤.");
         sum = tmp;
     }
 }
-// ¿îÀü ±â»ç Å¬·¡½º
+// ìš´ì „ ê¸°ì‚¬ í´ë˜ìŠ¤
 class Driver extends Thread
 {
     private Company comp;
+    
     public Driver(Company c)
     {
         comp = c;
@@ -32,8 +33,10 @@ class Sample7
     public static void main(String[] args)
     {
         Company cmp = new Company();
+        
         Driver drv1 = new Driver(cmp);
         drv1.start();
+        
         Driver drv2 = new Driver(cmp);
         drv2.start();
     }

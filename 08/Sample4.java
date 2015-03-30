@@ -1,22 +1,23 @@
-// ÀÚµ¿Â÷ Å¬·¡½º
+// ìë™ì°¨ í´ë˜ìŠ¤
 class Car
 {
         int num;
         double gas;
+        
         void setNum(int n)
         {
             num = n;
-            System.out.println("Â÷·® ¹øÈ£¸¦ " + num + " À¸·Î ¹Ù²Ù¾ú½À´Ï´Ù.");
+            System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ë¥¼ " + num + " ìœ¼ë¡œ ë°”ê¾¸ì—ˆìŠµë‹ˆë‹¤.");
         }
         void setGas(double g)
         {
             gas = g;
-            System.out.println("¿¬·á ¾çÀ» " + gas + " À¸·Î ¹Ù²Ù¾ú½À´Ï´Ù.");
+            System.out.println("ì—°ë£Œ ì–‘ì„ " + gas + " ìœ¼ë¡œ ë°”ê¾¸ì—ˆìŠµë‹ˆë‹¤.");
         }
         void show()
         {
-            System.out.println("Â÷·® ¹øÈ£´Â " + num + " ÀÔ´Ï´Ù.");
-            System.out.println("¿¬·á ¾çÀº " + gas + " ÀÔ´Ï´Ù.");
+            System.out.println("ì°¨ëŸ‰ ë²ˆí˜¸ëŠ” " + num + " ì…ë‹ˆë‹¤.");
+            System.out.println("ì—°ë£Œ ì–‘ì€ " + gas + " ì…ë‹ˆë‹¤.");
         }
 
         void showCar() {}
@@ -27,6 +28,7 @@ class Sample4
     public static void main(String[] args)
     {
         Car car1 = new Car();
+        
         car1.setNum(1234);
         car1.setGas(20.5);
     }

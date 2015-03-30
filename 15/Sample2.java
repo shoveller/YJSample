@@ -2,12 +2,14 @@ class Sample2
 {
     public static void main(String[] args)
     {
-        Car car1 = new Car("1 È£Â÷");
+        Car car1 = new Car("1 í˜¸ì°¨");
         car1.start();
-        Car car2 = new Car("2 È£Â÷");
+        
+        Car car2 = new Car("2 í˜¸ì°¨");
         car2.start();
+        
         for(int i=0; i<5; i++){
-            System.out.println("main() ¸Þ¼Òµå ½ÇÇàÁßÀÔ´Ï´Ù.");
+            System.out.println("main() ë©”ì†Œë“œ ì‹¤í–‰ì¤‘ìž…ë‹ˆë‹¤.");
         }
     }
 }

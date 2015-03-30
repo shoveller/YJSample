@@ -26,6 +26,7 @@ class Sample2
     public static void main(String[] args)
     {
         Car car1 = new Car();
+        
         // 이러한 접근은 불가능합니다.
         //car1.num = 1234;
         //car1.gas = -10.0;

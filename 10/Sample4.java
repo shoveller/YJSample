@@ -4,13 +4,19 @@ class Sample4
 {
     public static void main(String[] args) throws IOException
     {
-        System.out.println("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+        System.out.println("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
         String str1 = br.readLine();
-        System.out.println("Ãß°¡ÇÒ ¹®ÀÚ¿­À» ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+        
+        System.out.println("ì¶”ê°€í•  ë¬¸ìì—´ì„ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
+        
         String str2 = br.readLine();
+        
         StringBuffer sb = new StringBuffer(str1);
         sb.append(str2);
-        System.out.println (str1 + " ¿¡ "+ str2 + " À»(¸¦) Ãß°¡ÇÏ¸é " + sb + " ÀÔ´Ï´Ù.");
+        
+        System.out.println (str1 + " ì— "+ str2 + " ì„(ë¥¼) ì¶”ê°€í•˜ë©´ " + sb + " ì…ë‹ˆë‹¤.");
     }
 }

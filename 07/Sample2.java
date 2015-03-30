@@ -4,20 +4,26 @@ class Sample2
 {
     public static void main(String[] args) throws IOException
     {
-        System.out.println("½ÃÇè ÀÀ½ÃÀÚ ¼ö¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+        System.out.println("ì‹œí—˜ ì‘ì‹œì ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
         String str = br.readLine();
         int num = Integer.parseInt(str);
+        
         int [] test;
         test = new int[num];
-        System.out.println("½ÃÇè ÀÀ½ÃÀÚ ¼ö ¸¸Å­ Á¡¼ö¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+        
+        System.out.println("ì‹œí—˜ ì‘ì‹œì ìˆ˜ ë§Œí¼ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
+        
         for(int i=0; i<num; i++){
             str = br.readLine();
             int tmp = Integer.parseInt(str);
             test[i] = tmp;
         }
+        
         for(int i=0; i<num; i++){
-            System.out.println((i + 1) + "¹øÂ° »ç¶÷ÀÇ Á¡¼ö´Â "+ test[i] + "ÀÔ´Ï´Ù.");
+            System.out.println((i + 1) + "ë²ˆì§¸ ì‚¬ëŒì˜ ì ìˆ˜ëŠ” "+ test[i] + "ì…ë‹ˆë‹¤.");
         }
     }
 }

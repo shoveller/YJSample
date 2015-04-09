@@ -25,6 +25,6 @@ class Sample5
         }
         catch(InterruptedException  e){}
         
-        System.out.println("main() 메소드 실행중입니다.");
+        System.out.println("main() 의 실행을 종료합니다.");
     }
 }

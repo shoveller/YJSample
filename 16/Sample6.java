@@ -1,19 +1,42 @@
-import java.applet.Applet;
-import java.awt.Button;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
+import java.awt.*;
+import java.awt.event.*;
 
-public class Sample6 extends Applet implements ActionListener
+public class Sample6 extends Frame
 {
-    Button bt;
-    public void init()
+  int x = 10;
+  int y = 10;
+
+  public static void main(String[] args)
+  {
+    Sample6 sm = new Sample6();
+  }
+  public Sample6()
+  {
+    super("샘플");
+    addWindowListener(new SampleWindowListener());
+    addMouseListener(new SampleMouseAdapter());
+
+    setSize(250, 200);
+    setVisible(true);
+  }
+  public void paint(Graphics g)
+  {
+    g.setColor(Color.RED);
+    g.fillOval(x, y, 10, 10);
+  }
+
+  class SampleWindowListener extends WindowAdapter
+  {
+    public void windowClosing(WindowEvent e)
     {
-        bt = new Button("시작");
-        add(bt);
-        bt.addActionListener(this);
+      System.exit(0);
     }
-    public void actionPerformed(ActionEvent ae)
+  }
+  class SampleMouseAdapter extends MouseAdapter
+  {
+    public void mousePressed(MouseEvent e)
     {
-        bt.setLabel("중지");
+      x = e.getX(); y = e.getY(); repaint();
     }
+  }
 }

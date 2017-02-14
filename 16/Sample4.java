@@ -1,34 +1,47 @@
-import java.applet.Applet;
-import java.awt.Graphics;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseEvent;
+import java.awt.*;
+import java.awt.event.*;
 
-public class Sample4 extends Applet implements MouseListener
+public class Sample4 extends Frame
 {
-    int x = 10; int y = 10;
-    public void init()
+  private Button bt;
+
+  public static void main(String[] args)
+  {
+    Sample4 sm = new Sample4();
+  }
+  public Sample4()
+  {
+    super("샘플");
+    bt = new Button("환영합니다.");
+    add(bt);
+
+    addWindowListener(new SampleWindowListener());
+    bt.addMouseListener(new SampleMouseListener());
+
+    setSize(250, 200);
+    setVisible(true);
+  }
+
+  class SampleWindowListener extends WindowAdapter
+  {
+    public void windowClosing(WindowEvent e)
     {
-        addMouseListener(this);
+      System.exit(0);
     }
-    public void mouseClicked(MouseEvent e)
-    {
-    }
+  }
+
+  class SampleMouseListener implements MouseListener
+  {
+    public void mouseClicked(MouseEvent e){}
+    public void mouseReleased(MouseEvent e){}
+    public void mousePressed(MouseEvent e){}
     public void mouseEntered(MouseEvent e)
     {
+      bt.setLabel("어서오세요.");
     }
     public void mouseExited(MouseEvent e)
     {
+      bt.setLabel("환영합니다.");
     }
-    public void mousePressed(MouseEvent e)
-    {
-        x = e.getX();
-        y = e.getY(); repaint();
-    }
-    public void mouseReleased(MouseEvent e)
-    {
-    }
-    public void paint(Graphics g)
-    {
-        g.fillOval(x, y, 10, 10);
-    }
+  }
 }

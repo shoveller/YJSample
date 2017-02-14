@@ -1,16 +1,39 @@
-import java.applet.Applet;
-import java.awt.Graphics;
-import java.awt.Image;
+import java.awt.*;
+import java.awt.event.*;
 
-public class Sample3 extends Applet
+public class Sample3 extends Frame
 {
-    Image img;
-    public void init()
+  private Button bt;
+
+  public static void main(String[] args)
+  {
+    Sample3 sm = new Sample3();
+  }
+  public Sample3()
+  {
+    super("샘플");
+    bt = new Button("환영합니다.");
+    add(bt);
+
+    addWindowListener(new SampleWindowListener());
+    bt.addActionListener(new SampleActionListener());
+
+    setSize(250, 200);
+    setVisible(true);
+  }
+
+  class SampleWindowListener extends WindowAdapter
+  {
+    public void windowClosing(WindowEvent e)
     {
-         img = getImage(getDocumentBase(),"Image.gif");
+      System.exit(0);
     }
-    public void paint(Graphics g)
+  }
+  class SampleActionListener implements ActionListener
+  {
+    public void actionPerformed(ActionEvent e)
     {
-        g.drawImage(img, 10, 10, this);
+      bt.setLabel("안녕하세요.");
     }
+  }
 }

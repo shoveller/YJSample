@@ -1,26 +1,36 @@
-import java.applet.Applet;
-import java.awt.Graphics;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.*;
+import java.awt.event.*;
 
-public class Sample5 extends Applet
+public class Sample5 extends Frame
 {
-    int x = 10;
-    int y = 10;
-    public void init()
+  Image im;
+
+  public static void main(String[] args)
+  {
+    Sample5 sm = new Sample5();
+  }
+  public Sample5()
+  {
+    super("샘플");
+
+    Toolkit tk = getToolkit();
+    im = tk.getImage("Image.jpg");
+
+    addWindowListener(new SampleWindowListener());
+
+    setSize(250, 200);
+    setVisible(true);
+  }
+  public void paint(Graphics g)
+  {
+    g.drawImage(im, 100, 100, this);
+  }
+
+  class SampleWindowListener extends WindowAdapter
+  {
+    public void windowClosing(WindowEvent e)
     {
-        addMouseListener(new MouseAdapter()
-        {
-            public void mousePressed(MouseEvent e)
-            {
-                x = e.getX();
-                y = e.getY();
-                repaint();
-            }
-        });
+      System.exit(0);
     }
-    public void paint(Graphics g)
-    {
-        g.fillOval(x, y, 10, 10);
-    }
+  }
 }

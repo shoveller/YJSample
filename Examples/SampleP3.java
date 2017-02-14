@@ -1,40 +1,48 @@
-import java.applet.Applet;
-import java.awt.Graphics;
-import java.awt.Image;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseEvent;
+import java.awt.*;
+import java.awt.event.*;
 
-public class SampleP3 extends Applet implements MouseListener
+public class SampleP3 extends Frame
 {
-    Image img;
-    int x = 10;
-    int y = 10;
+  Image im;
+  int x = 100;
+  int y = 100;
 
-    public void init()
+  public static void main(String[] args)
+  {
+	SampleP3 sm = new SampleP3();
+  }
+  public SampleP3()
+  {
+    super("샘플");
+
+	Toolkit tk = getToolkit();
+	im = tk.getImage("Image.jpg");
+	
+	addWindowListener(new SampleWindowListener());
+	addMouseListener(new SampleMouseAdapter());
+	
+	setSize(250, 200);
+	setVisible(true);
+  }
+  public void paint(Graphics g)
+  {
+    g.drawImage(im, x, y, this);
+  }
+
+  class SampleWindowListener extends WindowAdapter
+  {
+	public void windowClosing(WindowEvent e)
     {
-        img = getImage(getDocumentBase(),"Image.gif"); addMouseListener(this);
+	  System.exit(0);
     }
-    public void mouseClicked(MouseEvent e)
-    {
-    }
-    public void mouseEntered(MouseEvent e)
-    {
-    }
-    public void mouseExited(MouseEvent e)
-    {
-    }
+  }
+  class SampleMouseAdapter extends MouseAdapter
+  {
     public void mousePressed(MouseEvent e)
     {
-        x = e.getX();
-        y = e.getY();
-        repaint();
-    }
-    public void mouseReleased(MouseEvent e)
-    {
-    }
-    public void paint(Graphics g)
-    {
-        g.drawImage(img, x, y, this);
-    }
+	  x = e.getX();
+	  y = e.getY();
+	  repaint();
+	}
+  }
 }
-

@@ -1,10 +1,28 @@
-import java.applet.Applet;
-import java.awt.Graphics;
+import java.awt.*;
+import java.awt.event.*;
 
-public class Sample1 extends Applet
+public class Sample1 extends Frame
 {
-    public void paint(Graphics g)
+  public static void main(String[] args)
+  {
+     Sample1 sm = new Sample1();
+  }
+
+  public Sample1()
+  {
+     super("ìƒ˜í”Œ");
+
+     addWindowListener(new SampleWindowListener());
+
+     setSize(250, 200);
+     setVisible(true);
+  }
+
+  class SampleWindowListener extends WindowAdapter
+  {
+    public void windowClosing(WindowEvent e)
     {
-        g.drawString("Java ¾ÖÇÃ¸´¿¡ ¿À½Å °ÍÀ» È¯¿µÇÕ´Ï´Ù!", 10, 10);
+       System.exit(0);
     }
+  }
 }

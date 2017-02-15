@@ -1,28 +1,39 @@
 import java.awt.*;
 import java.awt.event.*;
 
-public class Sample6 extends Frame
+public class Sample7 extends Frame implements Runnable
 {
-  int x = 10;
-  int y = 10;
+  int num;
 
   public static void main(String[] args)
   {
-    Sample6 sm = new Sample6();
+    Sample7 sm = new Sample7();
   }
-  public Sample6()
+  public Sample7()
   {
     super("»ùÇÃ");
     addWindowListener(new SampleWindowListener());
-    addMouseListener(new SampleMouseAdapter());
+
+    Thread th;
+    th = new Thread(this);
+    th.start();
 
     setSize(250, 200);
     setVisible(true);
   }
+
+    public void run()
+    {
+      try {
+        for(int i=0; i<10; i++){
+        num = i; repaint(); Thread.sleep(1000);
+      }
+    }catch(InterruptedException e){}
+  }
   public void paint(Graphics g)
   {
-    g.setColor(Color.RED);
-    g.fillOval(x, y, 10, 10);
+    String str = num + "ÀÔ´Ï´Ù.";
+    g.drawString(str, 100, 100);
   }
 
   class SampleWindowListener extends WindowAdapter
@@ -30,13 +41,6 @@ public class Sample6 extends Frame
     public void windowClosing(WindowEvent e)
     {
       System.exit(0);
-    }
-  }
-  class SampleMouseAdapter extends MouseAdapter
-  {
-    public void mousePressed(MouseEvent e)
-    {
-      x = e.getX(); y = e.getY(); repaint();
     }
   }
 }
